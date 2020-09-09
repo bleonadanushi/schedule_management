@@ -1,0 +1,133 @@
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\OrariMesimorAngularJS.dll.config
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\OrariMesimorAngularJS.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\OrariMesimorAngularJS.pdb
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csc.exe
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csc.exe.config
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csc.rsp
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csi.exe
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csi.exe.config
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csi.rsp
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.AppContext.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Console.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.Compression.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Claims.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Threading.Thread.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.ValueTuple.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\vbc.exe
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\vbc.exe.config
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\vbc.rsp
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.csproj.CopyComplete
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.pdb
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\Newtonsoft.Json.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\System.Net.Http.Formatting.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Cors.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Http.Cors.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Http.dll
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\Newtonsoft.Json.xml
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\System.Net.Http.Formatting.xml
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Http.xml
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Http.Cors.xml
+C:\Users\user\source\repos\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\OrariMesimorAngularJS.dll.config
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\OrariMesimorAngularJS.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\OrariMesimorAngularJS.pdb
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csc.exe
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csc.exe.config
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csc.rsp
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csi.exe
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csi.exe.config
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\csi.rsp
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.AppContext.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Console.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.Compression.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Claims.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Threading.Thread.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.ValueTuple.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\vbc.exe
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\vbc.exe.config
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\vbc.rsp
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\VBCSCompiler.exe
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\System.Net.Http.Formatting.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Cors.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Http.Cors.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Http.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\Newtonsoft.Json.xml
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\System.Net.Http.Formatting.xml
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Http.xml
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\bin\System.Web.Http.Cors.xml
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.dll
+C:\Users\PC\Desktop\New folder\Project\OrariMesimor\OrariMesimorAngularJS\obj\Debug\OrariMesimorAngularJS.pdb

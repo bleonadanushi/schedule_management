@@ -1,0 +1,77 @@
+﻿<link rel="stylesheet" type="text/css" href="../Style/ImportLendet.css">
+<div>
+    <div class="modal-header">
+        <button type="button" ng-click="close()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">Edit Record</h4>
+    </div>
+    <div class="modal-body" >
+        <form  id="editform" ng-submit="editrec()">
+            <label for="Dega">Dega</label>
+            <br />
+            <select id="Deget" ng-model="getImportLendet.Dega"  >
+                <option ng-repeat="dege in deget" value="{{dege.Dega}}">{{dege.Dega}}</option>
+            </select>
+            <br />
+            <label>Lenda</label>
+            <br />
+            <select id="Deget" ng-model="getImportLendet.Lenda">
+                <option value="0">-- Zgjidh Lenden --</option>
+                <option ng-repeat="lende in lendet" value="{{lende.Lenda}}">{{lende.Lenda}}</option>
+            </select>
+            <br />
+            
+            <label for="Viti">Viti</label>
+            <br />
+            <select id="Viti" name="Viti" ng-model="getImportLendet.Viti" class="dropDownList">
+                <option value="0">-- Zgjidh Vitin --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <br />
+            <label for="Paraleli">Paraleli</label><br />
+            <select id="Paraleli" ng-model="getImportLendet.Paraleli" >
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+            </select>
+            <br />
+            <label for="Tipi">Tipe</label><br />
+            <select id="Tipi" ng-model="getImportLendet.Tipi" >
+                <option value="leksion">Leksion</option>
+                <option value="seminar">Seminar</option>
+                <option value="laborator">Laborator</option>
+            </select>
+            <br />
+            <label for="Pedagoge">Pedagoge</label><br />
+            <select id="Pedagog" ng-model="getImportLendet.Pedagog">
+                <option value="0">-- Zgjidh Pedagog --</option>
+                <option ng-repeat="pedagogu in pedagog" value="{{pedagogu.Email}}">{{pedagogu.Emri}}</option>
+            </select>
+            <br />
+            <label for="Kapur">Kapur</label><br />
+            <select id="Kapur" ng-model="getImportLendet.Kapur">
+                <option value=1>E vendosur</option>
+                <option value=0>E lire</option>
+            </select>
+            <br />
+            <label for="Zgjedhje">Zgjedhje</label>
+            <br />
+            <select id="Zgjedhje" ng-model="getImportLendet.Zgjedhje" >
+                <option value="0">Me detyrim</option>
+                <option value="1">Me zgjedhje</option>
+            </select>
+            <br />
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="close()">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="save()">Update changes</button>
+    </div>
+</div>

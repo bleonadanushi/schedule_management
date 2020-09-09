@@ -1,0 +1,37 @@
+﻿#importLendet{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+ td,th{
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4286f4;
+    color: white;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}
+table.fixed {
+    table-layout: fixed;
+    width: 90px;
+}
+    table.fixed td {
+        overflow: hidden;
+    }
+
+select {
+    width: 60%;
+    position: center;
+    font: 16px/26px "Raleway", sans-serif;
+ 
+}

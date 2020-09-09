@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html ng-app="ImportLendetApp">
+<head>
+
+    <link data-require="bootstrap-css@*" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-touch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="../Scripts/App.module.js"></script>
+    <script src="../Controller/ImportLendetController.js"></script>
+    <script src="../Controller/EditModalController.js"></script>
+    <script src="../Controller/AddModalController.js"></script>
+    <script src="../Controller/DeleteModalController.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../Style/ImportLendet.css">
+</head>
+<body ng-controller="ImportLendetsController">
+    <h1>Import Lendet List</h1>
+    <div>
+        <button type="button" class="btn btn-success" ng-click="AddLende()">Add New</button>
+        
+        <table   class="fixed" id="importLendet" border="1">
+            <thead>
+                <tr>
+                    <th>Dega</th>
+                    <th>Viti</th>
+                    <th>Lenda</th>
+                    <th>Paraleli</th>
+                    <th>Pedagog</th>
+                    <th>Kapur</th>
+                    <th>Tipi</th>
+                    <th>Zgjedhje</th>
+                    <th colspan="2" style="text-align:center">Veprime</th>
+                </tr>
+            </thead>
+                <tbody ng-repeat="lende in Lendet">
+                    <tr>
+                        <td width="30%">{{lende.Dega}}</td>
+                        <td width="5%">{{lende.Viti}}</td>
+                        <td width="20%">{{lende.Lenda}}</td>
+                        <td width="5%">{{lende.Paraleli}}</td>
+                        <td width="10%">{{lende.Pedagog}}</td>
+                        <td width="10%" ng-if="lende.Kapur == 1">E vendosur</td>
+                        <td width="10%" ng-if="lende.Kapur == 0">E lire</td>
+                        <td width="10%">{{lende.Tipi}}</td>
+                        <td width="10%" ng-if="lende.Zgjedhje == 0">Me detyrim</td>
+                        <td width="10%" ng-if="lende.Zgjedhje == 1">Me zgjedhje</td>
+                        <td width="5%"> <button type="button" class="btn btn-primary" ng-click="openModal(lende)"> Edit</button></td>
+                        <td width="5%"> <button type="button" class="btn btn-danger" ng-click="Delete(lende)">Delete</button></td>
+                    </tr>
+
+                </tbody>
+        </table>
+    </div>
+ 
+</body>
+</html>
+

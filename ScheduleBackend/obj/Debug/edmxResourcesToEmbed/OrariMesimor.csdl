@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Orari_MesimorModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Deget">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dega" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Disponibel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="DitaId" Type="Int32" Nullable="false" />
+    <Property Name="OraId" Type="Int32" Nullable="false" />
+    <Property Name="KlasaId" Type="Int32" Nullable="false" />
+    <Property Name="Perdorur" Type="Boolean" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Ditet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dita" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ImportLendet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dega" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Viti" Type="Int32" Nullable="false" />
+    <Property Name="Lenda" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Paraleli" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tipi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pedagog" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Kapur" Type="Int32" Nullable="false" />
+    <Property Name="IdTipi" Type="Int32" Nullable="false" />
+    <Property Name="Zgjedhje" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Klasat">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Klasa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Kapaciteti" Type="Int32" />
+    <Property Name="Tipi" Type="Int32" />
+    <Property Name="Godina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Kati" Type="Int32" />
+    <Property Name="Perdoret" Type="Boolean" Nullable="false" />
+    <Property Name="KlasaNew" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Lendet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Lenda" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DEGA" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Orari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Dega" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Viti" Type="Int32" Nullable="false" />
+    <Property Name="Paraleli" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Lenda" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tipi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pedagog" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Dita" Type="Int32" Nullable="false" />
+    <Property Name="Klasa" Type="Int32" Nullable="false" />
+    <Property Name="Ora" Type="Int32" Nullable="false" />
+    <Property Name="Zgjedhje" Type="Int32" />
+    <Property Name="Final" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Oret">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ora" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tipet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Tipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pedagog">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Emri" />
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emri" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="OrariMesimorEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Degets" EntityType="Self.Deget" />
+    <EntitySet Name="Disponibels" EntityType="Self.Disponibel" />
+    <EntitySet Name="Ditets" EntityType="Self.Ditet" />
+    <EntitySet Name="ImportLendets" EntityType="Self.ImportLendet" />
+    <EntitySet Name="Klasats" EntityType="Self.Klasat" />
+    <EntitySet Name="Lendets" EntityType="Self.Lendet" />
+    <EntitySet Name="Oraris" EntityType="Self.Orari" />
+    <EntitySet Name="Orets" EntityType="Self.Oret" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Tipets" EntityType="Self.Tipet" />
+    <EntitySet Name="Pedagogs" EntityType="Self.Pedagog" />
+  </EntityContainer>
+</Schema>

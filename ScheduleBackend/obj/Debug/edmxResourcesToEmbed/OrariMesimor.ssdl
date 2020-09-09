@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Orari_MesimorModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Deget">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dega" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Disponibel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="DitaId" Type="int" Nullable="false" />
+    <Property Name="OraId" Type="int" Nullable="false" />
+    <Property Name="KlasaId" Type="int" Nullable="false" />
+    <Property Name="Perdorur" Type="bit" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ditet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dita" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ImportLendet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dega" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Viti" Type="int" Nullable="false" />
+    <Property Name="Lenda" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Paraleli" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Tipi" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Pedagog" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Kapur" Type="int" Nullable="false" />
+    <Property Name="IdTipi" Type="int" Nullable="false" />
+    <Property Name="Zgjedhje" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Klasat">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Klasa" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Kapaciteti" Type="int" />
+    <Property Name="Tipi" Type="int" />
+    <Property Name="Godina" Type="varchar" MaxLength="50" />
+    <Property Name="Kati" Type="int" />
+    <Property Name="Perdoret" Type="bit" Nullable="false" />
+    <Property Name="KlasaNew" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Lendet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Lenda" Type="nvarchar" MaxLength="250" />
+    <Property Name="DEGA" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Orari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dega" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Viti" Type="int" Nullable="false" />
+    <Property Name="Paraleli" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Lenda" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Tipi" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Pedagog" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dita" Type="int" Nullable="false" />
+    <Property Name="Klasa" Type="int" Nullable="false" />
+    <Property Name="Ora" Type="int" Nullable="false" />
+    <Property Name="Zgjedhje" Type="int" />
+    <Property Name="Final" Type="bit" />
+  </EntityType>
+  <EntityType Name="Oret">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ora" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view '2017_08_Orari_Mesimor.dbo.Pedagog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Pedagog">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Emri" />
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Emri" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tipet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Tipi" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Orari_MesimorModelStoreContainer">
+    <EntitySet Name="Deget" EntityType="Self.Deget" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Disponibel" EntityType="Self.Disponibel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ditet" EntityType="Self.Ditet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ImportLendet" EntityType="Self.ImportLendet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Klasat" EntityType="Self.Klasat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lendet" EntityType="Self.Lendet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orari" EntityType="Self.Orari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Oret" EntityType="Self.Oret" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tipet" EntityType="Self.Tipet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pedagog" EntityType="Self.Pedagog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Pedagog].[Id] AS [Id], 
+    [Pedagog].[Emri] AS [Emri], 
+    [Pedagog].[Email] AS [Email]
+    FROM [dbo].[Pedagog] AS [Pedagog]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

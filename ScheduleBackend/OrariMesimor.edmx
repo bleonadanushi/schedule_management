@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Orari_MesimorModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Deget">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Dega" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Disponibel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="DitaId" Type="int" Nullable="false" />
+          <Property Name="OraId" Type="int" Nullable="false" />
+          <Property Name="KlasaId" Type="int" Nullable="false" />
+          <Property Name="Perdorur" Type="bit" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ditet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Dita" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ImportLendet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Dega" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Viti" Type="int" Nullable="false" />
+          <Property Name="Lenda" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Paraleli" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Tipi" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Pedagog" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Kapur" Type="int" Nullable="false" />
+          <Property Name="IdTipi" Type="int" Nullable="false" />
+          <Property Name="Zgjedhje" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Klasat">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Klasa" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Kapaciteti" Type="int" />
+          <Property Name="Tipi" Type="int" />
+          <Property Name="Godina" Type="varchar" MaxLength="50" />
+          <Property Name="Kati" Type="int" />
+          <Property Name="Perdoret" Type="bit" Nullable="false" />
+          <Property Name="KlasaNew" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Lendet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Lenda" Type="nvarchar" MaxLength="250" />
+          <Property Name="DEGA" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Orari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Dega" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Viti" Type="int" Nullable="false" />
+          <Property Name="Paraleli" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Lenda" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Tipi" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Pedagog" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Dita" Type="int" Nullable="false" />
+          <Property Name="Klasa" Type="int" Nullable="false" />
+          <Property Name="Ora" Type="int" Nullable="false" />
+          <Property Name="Zgjedhje" Type="int" />
+          <Property Name="Final" Type="bit" />
+        </EntityType>
+        <EntityType Name="Oret">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ora" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view '2017_08_Orari_Mesimor.dbo.Pedagog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Pedagog">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Emri" />
+            <PropertyRef Name="Email" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Emri" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Tipet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Tipi" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Orari_MesimorModelStoreContainer">
+          <EntitySet Name="Deget" EntityType="Self.Deget" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Disponibel" EntityType="Self.Disponibel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ditet" EntityType="Self.Ditet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ImportLendet" EntityType="Self.ImportLendet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Klasat" EntityType="Self.Klasat" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lendet" EntityType="Self.Lendet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orari" EntityType="Self.Orari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Oret" EntityType="Self.Oret" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tipet" EntityType="Self.Tipet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pedagog" EntityType="Self.Pedagog" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Pedagog].[Id] AS [Id], 
+    [Pedagog].[Emri] AS [Emri], 
+    [Pedagog].[Email] AS [Email]
+    FROM [dbo].[Pedagog] AS [Pedagog]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Orari_MesimorModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Deget">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Dega" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Disponibel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="DitaId" Type="Int32" Nullable="false" />
+          <Property Name="OraId" Type="Int32" Nullable="false" />
+          <Property Name="KlasaId" Type="Int32" Nullable="false" />
+          <Property Name="Perdorur" Type="Boolean" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Ditet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Dita" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ImportLendet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Dega" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Viti" Type="Int32" Nullable="false" />
+          <Property Name="Lenda" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Paraleli" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Tipi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pedagog" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Kapur" Type="Int32" Nullable="false" />
+          <Property Name="IdTipi" Type="Int32" Nullable="false" />
+          <Property Name="Zgjedhje" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Klasat">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Klasa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Kapaciteti" Type="Int32" />
+          <Property Name="Tipi" Type="Int32" />
+          <Property Name="Godina" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Kati" Type="Int32" />
+          <Property Name="Perdoret" Type="Boolean" Nullable="false" />
+          <Property Name="KlasaNew" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Lendet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Lenda" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DEGA" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Orari">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Dega" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Viti" Type="Int32" Nullable="false" />
+          <Property Name="Paraleli" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Lenda" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Tipi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pedagog" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dita" Type="Int32" Nullable="false" />
+          <Property Name="Klasa" Type="Int32" Nullable="false" />
+          <Property Name="Ora" Type="Int32" Nullable="false" />
+          <Property Name="Zgjedhje" Type="Int32" />
+          <Property Name="Final" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Oret">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ora" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tipet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Tipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Pedagog">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Emri" />
+            <PropertyRef Name="Email" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Emri" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OrariMesimorEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Degets" EntityType="Self.Deget" />
+          <EntitySet Name="Disponibels" EntityType="Self.Disponibel" />
+          <EntitySet Name="Ditets" EntityType="Self.Ditet" />
+          <EntitySet Name="ImportLendets" EntityType="Self.ImportLendet" />
+          <EntitySet Name="Klasats" EntityType="Self.Klasat" />
+          <EntitySet Name="Lendets" EntityType="Self.Lendet" />
+          <EntitySet Name="Oraris" EntityType="Self.Orari" />
+          <EntitySet Name="Orets" EntityType="Self.Oret" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Tipets" EntityType="Self.Tipet" />
+          <EntitySet Name="Pedagogs" EntityType="Self.Pedagog" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Orari_MesimorModelStoreContainer" CdmEntityContainer="OrariMesimorEntities">
+          <EntitySetMapping Name="Degets">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Deget">
+              <MappingFragment StoreEntitySet="Deget">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Dega" ColumnName="Dega" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Disponibels">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Disponibel">
+              <MappingFragment StoreEntitySet="Disponibel">
+                <ScalarProperty Name="DitaId" ColumnName="DitaId" />
+                <ScalarProperty Name="OraId" ColumnName="OraId" />
+                <ScalarProperty Name="KlasaId" ColumnName="KlasaId" />
+                <ScalarProperty Name="Perdorur" ColumnName="Perdorur" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ditets">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Ditet">
+              <MappingFragment StoreEntitySet="Ditet">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Dita" ColumnName="Dita" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImportLendets">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.ImportLendet">
+              <MappingFragment StoreEntitySet="ImportLendet">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Dega" ColumnName="Dega" />
+                <ScalarProperty Name="Viti" ColumnName="Viti" />
+                <ScalarProperty Name="Lenda" ColumnName="Lenda" />
+                <ScalarProperty Name="Paraleli" ColumnName="Paraleli" />
+                <ScalarProperty Name="Tipi" ColumnName="Tipi" />
+                <ScalarProperty Name="Pedagog" ColumnName="Pedagog" />
+                <ScalarProperty Name="Kapur" ColumnName="Kapur" />
+                <ScalarProperty Name="IdTipi" ColumnName="IdTipi" />
+                <ScalarProperty Name="Zgjedhje" ColumnName="Zgjedhje" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Klasats">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Klasat">
+              <MappingFragment StoreEntitySet="Klasat">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Klasa" ColumnName="Klasa" />
+                <ScalarProperty Name="Kapaciteti" ColumnName="Kapaciteti" />
+                <ScalarProperty Name="Tipi" ColumnName="Tipi" />
+                <ScalarProperty Name="Godina" ColumnName="Godina" />
+                <ScalarProperty Name="Kati" ColumnName="Kati" />
+                <ScalarProperty Name="Perdoret" ColumnName="Perdoret" />
+                <ScalarProperty Name="KlasaNew" ColumnName="KlasaNew" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lendets">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Lendet">
+              <MappingFragment StoreEntitySet="Lendet">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Lenda" ColumnName="Lenda" />
+                <ScalarProperty Name="DEGA" ColumnName="DEGA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Oraris">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Orari">
+              <MappingFragment StoreEntitySet="Orari">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Dega" ColumnName="Dega" />
+                <ScalarProperty Name="Viti" ColumnName="Viti" />
+                <ScalarProperty Name="Paraleli" ColumnName="Paraleli" />
+                <ScalarProperty Name="Lenda" ColumnName="Lenda" />
+                <ScalarProperty Name="Tipi" ColumnName="Tipi" />
+                <ScalarProperty Name="Pedagog" ColumnName="Pedagog" />
+                <ScalarProperty Name="Dita" ColumnName="Dita" />
+                <ScalarProperty Name="Klasa" ColumnName="Klasa" />
+                <ScalarProperty Name="Ora" ColumnName="Ora" />
+                <ScalarProperty Name="Zgjedhje" ColumnName="Zgjedhje" />
+                <ScalarProperty Name="Final" ColumnName="Final" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orets">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Oret">
+              <MappingFragment StoreEntitySet="Oret">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Ora" ColumnName="Ora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipets">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Tipet">
+              <MappingFragment StoreEntitySet="Tipet">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Tipi" ColumnName="Tipi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pedagogs">
+            <EntityTypeMapping TypeName="Orari_MesimorModel.Pedagog">
+              <MappingFragment StoreEntitySet="Pedagog">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Emri" ColumnName="Emri" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
